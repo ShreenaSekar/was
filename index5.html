@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles3.css">
+        <title>MarioClub</title>
+    </head>
+    <body>
+        <header>
+            <h1>MarioClub</h1>
+        </header>
+        <section class="banner">
+            <img src="img/banner.png" alt="Marioclub welcome banner">
+            <div class="Welcome">
+                <h2>Welcome to <br><span>MarioClub</span></h2>
+            </div>
+        </section>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="/join.html">Join the club</a></li>
+                <li><a href="/news.html">Latest news</a></li>
+                <li><a href="/games.html">New games</a></li>
+                <li><a href="/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <main>
+            <article>
+                <h2>It's me Mario</h2>
+                <p class="first-para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque earum id sit, unde, saepe sapiente doloremque quas tempore laboriosam aliquam soluta quisquam alias distinctio, dolorum error explicabo. Quae, eius ducimus?</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque earum id sit, unde, saepe sapiente doloremque quas tempore laboriosam aliquam soluta quisquam alias distinctio, dolorum error explicabo. Quae, eius ducimus?</p>
+            </article>
+            <ul class="images">
+                <li><img src="img/thumb-1.png" alt="thumb1"></li>
+                <li><img src="img/thumb-2.png" alt="thumb2"></li>
+            </ul>
+        </main>
+        <section class="join">
+            <h2>Join Today</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis esse nisi eius nesciunt! Quisquam deleniti nesciunt nulla quae beatae animi iusto. Quidem molestias culpa asperiores repellendus distinctio? Vero, animi atque.</p>
+            <form id="joinForm">
+                <input type="email" name="email" id="email" placeholder="Type your Email" required>
+                <br>
+                <input type="password" name="password" id="password" placeholder="Type your Password" required>
+                <br>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+        <footer>
+            <p class="copyright">Copyright MarioClub</p>
+        </footer>
+
+        <script>
+            // Add event listener for form submission
+            document.getElementById("joinForm").addEventListener("submit", function (event) {
+                event.preventDefault(); // Prevent default form submission behavior
+
+                // Get email and password values
+                const email = document.getElementById("email").value;
+                const password = document.getElementById("password").value;
+
+                // Log to console
+                console.log("Email:", email);
+                console.log("Password:", password);
+            });
+        </script>
+    </body>
+</html>
